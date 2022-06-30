@@ -16,6 +16,10 @@ function Input(props) {
             src="https://source.unsplash.com/random/?book"
             alt="Woman's Face"
           />
+          <iframe
+            class="w-full aspect-video md:aspect-square"
+            src="https://www.youtube.com/embed/bD_ec7y8yho"
+          ></iframe>
           <h1 class="font-bold animate__animated animate__tada animate__infinite">
             Perpustakaan Sembada
           </h1>
