@@ -1,7 +1,12 @@
 import React from "react";
 import "animate.css";
 
-function Input() {
+function Input(props) {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // ???
+  };
+
   return (
     <div className="flex justify-around">
       <div class="left">
@@ -17,7 +22,11 @@ function Input() {
         </div>
         <div class="py-8 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
           <div class="text-center space-y-2 sm:text-left">
-            <form>
+            <form
+              onSubmit={(e) => {
+                handleSubmit(e);
+              }}
+            >
               <div class="shrink-0 flex items-center mb-5">
                 <img
                   class="h-16 w-16 object-cover rounded-full mr-1"
